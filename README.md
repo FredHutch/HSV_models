@@ -1,13 +1,16 @@
 # HSV_models
 This repository supports multiple stochastic HSV models written in C++ by collecting key files required
-to build them on a Linux UBUNTU 3.3 platform.
-In particular it supports models that require GTK 2.0 and OpenGL for their graphical output.  
-Other models can be compiled without the GUI interface and would not require the files in this repository.  
-Since the required packages may not be available on current systems, this repository should be cloned
-and the path to the extra_libs subdirectory must be set as the value of the EXTRA_LIBS environment 
-variable before running make in the Linux directory.
+to build them on a Linux UBUNTU 3.3 platform.  In particular it supports models that require GTK 2.0 
+and OpenGL for their graphical output. Some of the models can be compiled without the GUI interface 
+and would not require the files in this repository.  
 
-The models are availble in separate git repositories listed below.
+Since the required packages may not be available on current systems, this repository should be cloned
+and the path to the extra_libs subdirectory must be set as the value of the GTKGLEXT environment 
+variable before running make in the Linux directory.  It is preferable that users download the 
+gtkglext package for their system, but we replicate the binary library files and headers of the
+versions originally used here in case they are no longer available.
+
+The models wll be available in separate git repositories listed below.
 In general, they fall into two classes: compartmental ODE and agent-based models.
 All models have spatial components.  
 
